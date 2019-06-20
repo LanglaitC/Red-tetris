@@ -1,0 +1,39 @@
+.main_container {
+    color: red;
+    width: 100vw;
+    height: 100vh;
+    background: #111
+}
+
+.main_title_container {
+    font-family: 'Gill Sans';
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main_game_container {
+    width: 100%;
+    padding: 4% 5% 0% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.game_container {
+    width: 50%;
+    height: 770px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    width: 350px;
+    height: 100%;
+    display: grid;
+}
+
+.bloc {
+    width: 35px;
+    height: 35px;
+}
