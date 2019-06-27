@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "An api for the red tetris project",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ."
+  },
+  "keywords": [
+    "red",
+    "tetris"
+  ],
+  "author": "clanglai",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-stage-2": "^6.24.1",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "rimraf": "^2.6.3"
+  }
+}

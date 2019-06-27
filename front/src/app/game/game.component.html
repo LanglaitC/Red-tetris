@@ -3,19 +3,26 @@
     <h1>red tetris</h1>
   </div>
   <div class="main_game_container">
-    <div class="game_container">
-      <div class="auxiliary_container">
-        <h4>Player 1</h4>
-        <p>Score</p>
+    <ng-container *ngIf="inGame; else list">
+      <div class="game_container">
+        <div class="auxiliary_container">
+          <h4>Player 1</h4>
+          <p>Score</p>
+        </div>
+        <div class="grid"></div>
       </div>
-      <div class="grid"></div>
-    </div>
-    <div class="game_container">
-      <div class="auxiliary_container">
-        <h4>Player 2</h4>
-        <p>Score</p>
+      <div class="game_container">
+        <div class="auxiliary_container">
+          <h4>Player 2</h4>
+          <p>Score</p>
+        </div>
+        <div class="grid"></div>
       </div>
-      <div class="grid"></div>
-    </div>
+    </ng-container>
+    <ng-template #list>
+      <ul>
+        <li *ngFor="let elmt of names" (click)="sendInvite(elmt.id)">{{elmt.name}}</li>
+      </ul>
+    </ng-template>
   </div>
 </div>
